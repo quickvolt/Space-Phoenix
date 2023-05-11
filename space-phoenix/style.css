@@ -110,6 +110,7 @@ body .star.star8{
     width: 100%;
 }
 
+/** Navbar-css-start**/
 .navbar {
     background-color: #0A2647;
     overflow: hidden;
@@ -194,9 +195,20 @@ body .star.star8{
     border-style: solid 1px;
     border-radius: 10px;
 }
+/** Navbar-css-end**/
 
 main {
     color: #F0F0F0;
     margin-top: 200px;
     text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100em;
+    width: 80em;
+    margin-top: 7.5em;
+    margin-left: 16.7em;
+    border:2px solid tomato;
 }
