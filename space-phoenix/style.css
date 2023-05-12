@@ -44,42 +44,42 @@ body .star{
 }
 body .star.star1{
     animation-delay:0s;
-    background: url(img/star1.png);
+    background: url(img/Star-img/star1.png);
 	
 }
 body .star.star2{
     animation-delay:-1s;
-    background: url(img/star2.png);
+    background: url(img/Star-img/star2.png);
 
 }
 body .star.star3{
     animation-delay:-2s;
-    background: url(img/star3.png);
+    background: url(img/Star-img/star3.png);
 	
 }
 body .star.star4{
     animation-delay:-3s;
-    background: url(img/star4.png);
+    background: url(img/Star-img/star4.png);
 	
 }
 body .star.star5{
     animation-delay:-4s;
-    background: url(img/star5.png);
+    background: url(img/Star-img/star5.png);
 	
 }
 body .star.star6{
     animation-delay:-5s;
-    background: url(img/star6.png);
+    background: url(img/Star-img/star6.png);
 	
 }
 body .star.star7{
     animation-delay:-6s;
-    background: url(img/star7.png);
+    background: url(img/Star-img/star7.png);
 	
 }
 body .star.star8{
     animation-delay:-7s;
-    background: url(img/star8.png);
+    background: url(img/Star-img/star8.png);
 	
 }
 @keyframes animate
@@ -238,47 +238,4 @@ main {
     margin-top: 7.5em;
     margin-left: 18em;
     border:2px solid tomato;
-}
-
-.jenerik-kutusu {
-  width: 80%;
-  height: 400px;
-  margin: auto;
-  background-color: black;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  border: 3px solid blue;
-  box-sizing: border-box; /* kutunun içindeki içerikleri border'ın içinde yerleştirmek için */
-  border-radius: 15px; /* kutunun kenarlarını oval yapar */ 
-}
-
-.jenerik-listesi {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: jenerik 10s linear infinite;
-}
-
-.jenerik-listesi li {
-  font-size: 30px;
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
-@keyframes jenerik {
-  0% {
-    transform: translate(-50%, -50%) translateY(0);
-  }
-  100% {
-    transform: translate(-50%, -50%) translateY(-100%);
-  }
 }
