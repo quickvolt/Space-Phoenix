@@ -10,3 +10,9 @@ function updateSaat() {
   }
   
   setInterval(updateSaat, 1000);
+
+// Sayfa yüklenince animasyon başlatılır
+window.onload = function() {
+  document.querySelector('.jenerik').classList.add('animated');
+};
+
