@@ -282,6 +282,34 @@ main {
       transform: translate(-50%, -50%) translateY(-100%);
     }
   }
+  .jenerik-listesi li {
+    animation: slide-in 3s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  @keyframes slide-in {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+#nothing {
+  height: 1400px;
+}
+  
+
+.yeni-yazi {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: hareket 0.1s linear forwards;
+}
   
   @keyframes hareket {
     from {
