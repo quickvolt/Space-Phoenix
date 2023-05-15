@@ -322,4 +322,24 @@ main {
       transform: translateX(0);
     }
   }
+#Gallery{
+  width: 80%;
+  margin: auto;
+  height: 3000px;
+  margin-top: 20%;
+}
+#Gallery>img{
+  width: 20%;
+  margin: 2.5%;
+  height: 10.25%;
+}
+.gallery-photo {
+  transition: transform 0.3s, box-shadow 0.3s; /* Geçiş süresi */
+  transform-origin: center center; /* Büyüme orijini */
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.5); /* Gölgelendirme efekti */
+}
 
+.gallery-photo:hover {
+  transform: scale(1.15); /* Cursor fotoğrafın üzerine geldiğinde büyüme faktörü */
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); /* Gölgelendirme efekti */
+}
