@@ -110,15 +110,14 @@ body .star.star8{
     width: 100%;
 }
 
-/** Navbar-css-start**/
 .navbar {
-    background-color: #0A2647;
+    background-color: #2e2e2e;
     overflow: hidden;
     height: 100px;
     width: 100%;
     position: fixed;
-    box-shadow: 0px -10px 30px 0.1px rgb(78, 243, 235);
-    opacity: 90%;
+    box-shadow: 0px -10px 30px 0.1px rgb(255, 255, 255);
+    opacity: 95%;
     z-index: 2;
 }
 
@@ -130,6 +129,7 @@ body .star.star8{
     margin-top: 60px;
     text-decoration: none;
     margin-bottom: -10%;
+    background-color: #23353a;
     color: white;
     padding-top: 3.5px;
     padding-bottom: 3.5px;
@@ -173,7 +173,7 @@ body .star.star8{
 }
 
 .right-button a:hover {
-    background-color: #1e50f5;
+    background-color: rgb(238, 38, 38);
     border-radius: 10px;
     color: white;
 }
@@ -195,34 +195,24 @@ body .star.star8{
 }
 
 .left-button a:hover {
-    background-color: #1e50f5;
+    background-color: rgb(238, 38, 38);
     color: white;
     border-style: solid 1px;
     border-radius: 10px;
 }
 
-.time-container {
-    width: 10%;
-    height: 30px;
+.time {
+    font-size: large;
+    margin-right: 9%;
+    margin-top: -8%;
     float: right;
-    padding-top: 5px;
-    margin-top: 5px;
-    margin-right: px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
+    width: 10%;
     font-weight: bold;
     text-align: center;
     border-color: rgb(146, 144, 144);
-    color: rgb(139, 139, 139);
+    color: rgb(248, 214, 214);
     text-shadow: 0px 0px 15px rgb(30, 31, 31);
-  }
-  
-  .time {
-    font-size: x-large;
-    text-align: right;
-    margin-right: 15px;
-  }
+}
 
 /**Navbar-end**/
 main {
