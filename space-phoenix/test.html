@@ -43,6 +43,26 @@
     </nav>
     <!--Navbar-kısmı-bitiş-->
     <div id="arkaplan"></div>
+    <div class="form-container">
+    <h1>Gezegen Kilo Hesaplayıcı</h1>
+    <label for="weight">Kilonuz (kg):</label>
+    <input type="number" id="weight" min="0" required>
+    <div id="result-weight"></div>
+    <br>
+    <div id="test-alert"></div>
+    <h1>Gezegen Yaş Hesaplayıcı</h1>
+    <div class="form-container">
+      <label for="age">Yaşınız:</label>
+      <input type="number" id="age" min="0" required>
+      <br>
+    </div>
+    <button onclick="calculateWeights(),calculateAges()">Hesapla</button>
+  </div>
+  <div id="result-age"></div>
+
+
+
     <script src="script.js"></script>
+    <script src="test.js"></script>
 </body>
 </html>
