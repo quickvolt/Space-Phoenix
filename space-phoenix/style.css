@@ -10,7 +10,7 @@ body {
     position: relative;
     width: 100%;
     background: #000200;
-    display: block;
+    display: flex;
     overflow: hidden; /* Remove overflow-x and overflow-y properties */
     justify-content: center;
     align-items: center;
@@ -42,6 +42,7 @@ body .star{
                     backgroundmove 16s  infinite;
 	
 }
+/*********BACKGROUND-BASLANGIC*********/
 body .star.star1{
     animation-delay:0s;
     background: url(img/Star-img/star1.png);
@@ -109,9 +110,12 @@ body .star.star8{
     height: 1000px;
     width: 100%;
 }
+/*********BACKGROUND-BITIS*********/
 
+/*******NAVBAR_BASLANGIC*************/
 .navbar {
     background-color: #2e2e2e;
+    top: 0px;
     overflow: hidden;
     height: 100px;
     width: 100%;
@@ -214,7 +218,11 @@ body .star.star8{
     text-shadow: 0px 0px 15px rgb(30, 31, 31);
 }
 
-/**Navbar-end**/
+/*******NAVBAR_BITIS*************/
+
+
+
+/*******HAKKIMIZDA_BASLANGIC*************/
 main {
     color: #F0F0F0;
     margin-top: 200px;
@@ -243,8 +251,8 @@ main {
     right: 0;
     overflow: hidden;
     border: 3px solid blue;
-    box-sizing: border-box; /* kutunun içindeki içerikleri border'ın içinde yerleştirmek için */
-    border-radius: 15px; /* kutunun kenarlarını oval yapar */ 
+    box-sizing: border-box;
+    border-radius: 15px;  
     z-index: 1;
   }
 
@@ -312,6 +320,11 @@ main {
       transform: translateX(0);
     }
   }
+  /*******HAKKIMIZDA_BITIS*************/
+
+
+
+  /*******GALERI_BASLANGIC*************/
 #Gallery{
   width: 80%;
   margin: auto;
@@ -333,6 +346,7 @@ main {
   transform: scale(1.15); /* Cursor fotoğrafın üzerine geldiğinde büyüme faktörü */
   box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); /* Gölgelendirme efekti */
 }
+/*******GALERI_BITIS*************/
 
 /* Test.html css */
 .form-container {
@@ -368,3 +382,74 @@ input[type="number"] {
   margin-top: 20px;
   font-weight: bold;
 }
+
+
+
+/* Test.html css_end*/
+
+/*****Contact******/
+.card{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 20px;
+  margin-top: 20vh;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 40px;
+  text-align: center;
+}
+.card img{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 300px;
+  transition: 0.5s;
+  filter: saturate(30%);
+}
+.card:hover img{
+  left: 90%;
+  height: 350px;
+  filter: drop-shadow(0 0 0.75em orange);
+  filter: saturate(100%);
+  z-index: 4;
+}
+.card:hover{
+  filter: drop-shadow(0 0 0.75em orange);
+  z-index: 4;
+}
+.card .text{
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  transition:0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.card:hover .text{
+  left: 0%;
+  opacity: 1;
+  visibility: visible;
+}
+.card .text h2{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+.card .text p{
+  color: #fff;
+}
+.card .text a{
+  position: relative;
+  display: inline-block;
+  color: #050505;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+}
+/****Contact-End*******/
