@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space-Phoenix</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(60deg,black,#414141);
+            background-size: 600%,100%;
+            animation: gradiemt 35s linear infinite;
+            animation-direction: alternate;
+        }
+        @keyframes gradient{
+            0%{background-position: 0%;}
+            100%{background-position: 100%;}
+        }
+        .card{
+            width: 300em;
+            z-index: 1;
+            height: 50em;
+        }
+        .nav{
+            z-index: 5;
+        }
+    </style>
 </head>
 <body class="star1, star2, star3, star4, star5,">
     <!--arkaplan-özelliği-->
@@ -20,7 +47,7 @@
         <div class="star star8"></div>
     </div>
     <!--Navbar-kısmı-başlangıç-->
-    <nav>
+    <nav class="nav">
         <div class="navbar">
             <div id="space-phoenix">
                 <a href="index.html"><h3>Space-Phoenix</h3></a>
@@ -42,6 +69,44 @@
           </div>
     </nav>
     <!--Navbar-kısmı-bitiş-->
+
+    <!--Contact-Start-->
+
+    <div class="card" style="background:linear-gradient(60deg,black,#414141)">
+        <div class="text">
+                <h2>Emin Kutlu</h2>
+                <p>CEO of Space-phoenix</p>
+                <a href="mailto:emin.kltklt@gmail.com">İletişim</a>
+         </div>
+          <img src="img/pp/emin-pp.png" style="z-index:4;">
+    </div>
+
+    <div class="card" style="background:linear-gradient(60deg,rgb(97, 17, 17),#a04a4a);">
+        <div class="text">
+                <h2>Salih Erbaş</h2>
+                <p>CTO of Space-phoenix</p>
+                <a href="mailto:">İletişim</a>
+         </div>
+          <img src="img/pp/salih-pp.png" style="z-index:4;">
+    </div>
+
+    <div class="card" style="background:linear-gradient(60deg,rgb(14, 38, 83),#15488b);">
+        <div class="text">
+                <h2>Taha Arda Gül</h2>
+                <p>CCO of Space-phoenix</p>
+                <a href="mailto:">İletişim</a>
+         </div>
+          <img src="img/pp/taha-pp1.png" style="z-index:4;">
+    </div>
+
+    <div class="card" style="background:linear-gradient(60deg,rgb(131, 123, 49),#849427);">
+        <div class="text">
+                <h2>Ali Göktaş</h2>
+                <p>CFO of Space-phoenix</p>
+                <a href="mailto:">İletişim</a>
+         </div>
+          <img src="img/pp/ali-pp.png" style="z-index:4;">
+    </div>
     <div id="arkaplan"></div>
     <script src="script.js"></script>
 </body>
