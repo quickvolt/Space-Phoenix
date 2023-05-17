@@ -10,7 +10,6 @@ body {
     position: relative;
     width: 100%;
     background: #000200;
-    display: flex;
     overflow: hidden; /* Remove overflow-x and overflow-y properties */
     justify-content: center;
     align-items: center;
@@ -126,7 +125,7 @@ body .star.star8{
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
 }
-}
+
 
 .left-button a,
 .right-button a {
@@ -152,6 +151,7 @@ body .star.star8{
     text-transform: uppercase;
     text-decoration: none;
     font-size: x-large;
+    font-family:;
     border-style: solid;
     border-width: 2px;
     padding: 5px;
