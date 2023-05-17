@@ -42,26 +42,30 @@
           </div>
     </nav>
     <!--Navbar-kısmı-bitiş-->
-    <div id="arkaplan"></div>
+    <main style="margin:auto;">
+        <div id="background" style="height: 135.3vh;"></div>
     <div class="form-container">
-    <h1>Gezegen Kilo Hesaplayıcı</h1>
-    <label for="weight">Kilonuz (kg):</label>
-    <input type="number" id="weight" min="0" required>
-    <div id="result-weight"></div>
-    <br>
-    <div id="test-alert"></div>
-    <h1>Gezegen Yaş Hesaplayıcı</h1>
-    <div class="form-container">
-      <label for="age">Yaşınız:</label>
-      <input type="number" id="age" min="0" required>
-      <br>
+        <h3>Gezegenlere Göre <br> Kilo Hesapla</h3>
+        <input type="number" id="weight" min="0" placeholder="Kilonuz (kg):" required style="margin-bottom: 12%;">
+        <br>
+        <div id="test-alert">
+
+        </div>
+        <h3>Gezegenlere Göre <br> Yaş Hesapla</h3>
+        <input type="number" id="age" min="0" placeholder="Yaşınız:" required><br>
+        <button onclick="calculateWeights(),calculateAges()">Hesapla</button>
     </div>
-    <button onclick="calculateWeights(),calculateAges()">Hesapla</button>
-  </div>
-  <div id="result-age"></div>
-
-
-
+    <div id="form-result">
+        
+        <div id="result-weight">
+            <h3>Gezegene Göre Kilo</h3>
+        </div>
+        
+        <div id="result-age">
+            <h3>Gezegene Göre Yaş</h3>
+        </div>
+    </div>
+    </main>
     <script src="script.js"></script>
     <script src="test.js"></script>
 </body>
