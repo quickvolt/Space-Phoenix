@@ -123,6 +123,9 @@ body .star.star8{
     box-shadow: 0px -10px 30px 0.1px rgb(255, 255, 255);
     opacity: 95%;
     z-index: 2;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
 }
 
 .left-button a,
