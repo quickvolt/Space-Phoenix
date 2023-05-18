@@ -499,3 +499,75 @@ input[type="number"] {
   text-decoration: none;
 }
 /****Contact-End*******/
+
+/*** anasayfa başlangıç***/
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 1200px;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.text {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.image img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
+
+}
+
+.image img:hover::after {
+    content: attr(alt);
+    position: absolute;
+    top: 50%;
+    right: -120px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 255, 0.8);
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+
+}
+
+
