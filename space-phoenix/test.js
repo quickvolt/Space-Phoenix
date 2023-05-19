@@ -38,7 +38,7 @@ else{
 
 function displayResultsweight(results) {
   var resultDiv = document.getElementById('result-weight');
-    resultDiv.innerHTML="";
+    resultDiv.innerHTML=" <h3>Gezegene Göre Kilo</h3>";
 
   for (var planet in results) {
     var weightOnPlanet = results[planet];
@@ -82,7 +82,7 @@ function calculateAges() {
 
 function displayResultsage(results) {
   var resultDiv = document.getElementById('result-age');
-    resultDiv.innerHTML="";
+    resultDiv.innerHTML=" <h3>Gezegene Göre Yaş</h3>";
   for (var planet in results) {
     var ageOnPlanet = results[planet];
     var planetResult = document.createElement('p');
