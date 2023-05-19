@@ -590,17 +590,6 @@ input[type="number"] {
 }
 
 /*** anasayfa başlangıç ***/
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-}
-
-
 .bilgiler {
   width: 300%;
   padding: 40px;
