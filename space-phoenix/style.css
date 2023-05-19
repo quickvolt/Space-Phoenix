@@ -23,13 +23,15 @@ div{
     color:rgba(216, 219, 221, 0.733);
 }
 
-body h2{
+body h1{
   color:transparent;
   font-weight: 500;
   font-size:7em;
   -webkit-text-stroke: 2px #fff;
   text-transform: uppercase;
+  text-align: center;
 }
+
 body .star{
     position:absolute;
     top:0;
