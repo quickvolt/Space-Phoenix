@@ -662,3 +662,44 @@ body {
   white-space: nowrap;
   
 }
+.info-container {
+  background-color: #222;
+  color: #aaa;
+  padding: 20px;
+  margin: 200px;
+  height: 1200vh;
+  border-radius: 10px;
+}
+
+.info-container h2 {
+  color:transparent;
+  font-weight: 500;
+  font-size:3em;
+  -webkit-text-stroke: 2px #fff;
+  text-transform: uppercase;
+}
+
+.info-container p {
+  margin-top: 10px;
+  font-size: 32px;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 en-boy oranı */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.info-container  li div h2 {
+  font-size: 18px;
+  margin: 0; 
+  padding: 0; 
+}
