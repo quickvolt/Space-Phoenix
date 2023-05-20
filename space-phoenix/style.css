@@ -615,65 +615,60 @@ input[type="number"] {
 }
 
 /*** anasayfa başlangıç ***/
-.bilgiler {
-  width: 300%;
-  padding: 40px;
+.contar {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin: 200px auto 0;
-  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.bilgi {
- width: 100%;
- max-width: 800px;
- align-items: center;
- flex-wrap: wrap;
- 
+header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.yazı {
-  text-align: center;
-  font-size: 24px;
+h1 {
+  color: #333;
+  font-size: 36px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-.ressim {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
+h2 {
+  color: #555;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.ressim img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-.ressim img:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-  box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
-
+p {
+  color: #888;
+  margin-bottom: 10px;
 }
 
-.ressim img:hover::after {
-  content: attr(alt);
-  position: absolute;
-  top: 50%;
-  right: -120px;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 255, 0.8);
-  color: #fff;
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  white-space: nowrap;
+.article {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.görsel {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.content {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.author {
+  font-style: italic;
+}
+
+.date {
+  color: #888;
+}
+/* ana sayfa bitiş*/
   
 }
 .info-container {
