@@ -6,8 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space-Phoenix</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>      
+        body {
+            color: white;
+            text-align: center;
+            margin-top: 150px;
+          }
+      
+          .dragon {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+          }
+      
+          .dragon h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 0;
+          }
+      
+          .dragon h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+      
+          .dragon p {
+            margin-top: 0;
+            margin-bottom: 10px;
+          }
+      
+          .dragon .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+      
+          .dragon .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            opacity: 0.8;
+          }
+      
+          .dragon .image-container img:hover {
+            opacity: 1;
+          }
+      
+          .dragon a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+          }
+      
+          .dragon a:hover {
+            background-color: #0056b3;
+          }
+    </style>
 </head>
-<body class="star1, star2, star3, star4, star5,">
+<body>
     <!--arkaplan-özelliği-->
     <div>
         <div class="star star1"></div>
@@ -42,7 +103,45 @@
           </div>
     </nav>
     <!--Navbar-kısmı-bitiş-->
+    <div id="dragonContainer"></div>
+    
     <div id="arkaplan"></div>
-    <script src="script.js"></script>
+
+    <script>
+        fetch('https://api.spacexdata.com/v4/dragons')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('API isteği başarısız.');
+          }
+          return response.json();
+        })
+        .then(data => {
+          const dragonContainer = document.getElementById('dragonContainer');
+          data.forEach(dragon => {
+            const name = dragon.name;
+            const description = dragon.description;
+            const flickrImages = dragon.flickr_images;
+            const youtubeVideo = dragon.youtube_id;
+            const wikipedia = dragon.wikipedia;
+  
+            const dragonElement = document.createElement('div');
+            dragonElement.classList.add('dragon');
+            dragonElement.innerHTML = `
+              <h2>${name}</h2>
+              <p>${description}</p>
+              <div class="image-container">
+                ${flickrImages.map(image => `<img src="${image}" alt="Dragon Resmi">`).join('')}
+              </div>
+              <p><a href="${wikipedia}" target="_blank">Daha Fazla Bilgi</a></p>
+              <hr>
+            `;
+  
+            dragonContainer.appendChild(dragonElement);
+          });
+        })
+        .catch(error => {
+          console.error(error);
+        });
+  </script>
 </body>
 </html>
