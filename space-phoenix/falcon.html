@@ -108,40 +108,43 @@
     <div id="arkaplan"></div>
 
     <script>
-        fetch('https://api.spacexdata.com/v4/dragons')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('API isteği başarısız.');
-          }
-          return response.json();
-        })
-        .then(data => {
-          const dragonContainer = document.getElementById('dragonContainer');
-          data.forEach(dragon => {
-            const name = dragon.name;
-            const description = dragon.description;
-            const flickrImages = dragon.flickr_images;
-            const youtubeVideo = dragon.youtube_id;
-            const wikipedia = dragon.wikipedia;
-  
-            const dragonElement = document.createElement('div');
-            dragonElement.classList.add('dragon');
-            dragonElement.innerHTML = `
-              <h2>${name}</h2>
-              <p>${description}</p>
-              <div class="image-container">
-                ${flickrImages.map(image => `<img src="${image}" alt="Dragon Resmi">`).join('')}
-              </div>
-              <p><a href="${wikipedia}" target="_blank">Daha Fazla Bilgi</a></p>
-              <hr>
-            `;
-  
-            dragonContainer.appendChild(dragonElement);
-          });
-        })
-        .catch(error => {
-          console.error(error);
+      fetch('https://api.spacexdata.com/v4/dragons')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('API isteği başarısız.');
+        }
+        return response.json();
+      })
+      .then(data => {
+        const dragonContainer = document.getElementById('dragonContainer');
+        data.forEach((dragon, index) => {
+          const name = dragon.name;
+          const description = dragon.description;
+          const flickrImages = dragon.flickr_images;
+          const youtubeVideo = dragon.youtube_id;
+          const wikipedia = dragon.wikipedia;
+    
+          // İlk resmi kaldır
+          flickrImages.shift();
+    
+          const dragonElement = document.createElement('div');
+          dragonElement.classList.add('dragon');
+          dragonElement.innerHTML = `
+            <h2>${name}</h2>
+            <p>${description}</p>
+            <div class="image-container">
+              ${flickrImages.map((image, imageIndex) => `<img src="${image}" alt="Dragon Resmi" style="width: 800px; height: 800px; z-index: ${imageIndex + 1};">`).join('')}
+            </div>
+            <p><a href="${wikipedia}" target="_blank">Daha Fazla Bilgi</a></p>
+            <hr>
+          `;
+    
+          dragonContainer.appendChild(dragonElement);
         });
+      })
+      .catch(error => {
+        console.error(error);
+      });
   </script>
 </body>
 </html>
