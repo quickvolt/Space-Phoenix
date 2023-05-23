@@ -86,13 +86,28 @@
     <div class="container-clear"></div>
     <div id="contact" class="contact-section">
         <h2>İletişim</h2>
-        <p>Uzay hakkında daha fazla bilgi almak için bizimle iletişime geçebilirsiniz. Aşağıdaki formu doldurarak bize ulaşabilirsiniz.</p>
+  <p>Space-Phoenix hakkında daha fazla bilgi almak için<br>bizimle iletişime geçebilirsiniz. Yandaki formu doldurarak bize ulaşabilirsiniz.</p>
       
         <form>
-          <input type="text" name="name" placeholder="Adınız" required>
-          <input type="email" name="email" placeholder="E-posta Adresiniz" required>
-          <textarea name="message" placeholder="Mesajınız" required></textarea>
-          <button type="submit">Gönder</button>
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Adınız" required>
+              <label for="name"></label>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+              <label for="email"></label>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Mesajınız" required style="width:200px;"></textarea>
+              <label for="message"></label>
+            </div>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Gönder
+              </a>
         </form>
       
         <div class="contact-info">
