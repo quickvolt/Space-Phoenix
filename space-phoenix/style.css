@@ -871,3 +871,35 @@ form a span:nth-child(4){
       bottom: 100%;
   }
 }
+
+.hr-line {
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 255, 0.8), transparent);
+  background-size: 200% 100%;
+  position: relative;
+  animation: lightbeam 2s linear infinite;
+}
+
+@keyframes lightbeam {
+  0% {
+      background-position: -100% center;
+
+  }
+
+  100% {
+      background-position: 100% center;
+  }
+
+}
+
+h4 {
+  font-size: 50px;
+  color: #ff0000;
+}
+h4:hover {
+  color: #990000;
+}
+p {
+  font-size: 25px;
+}
