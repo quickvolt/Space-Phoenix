@@ -222,6 +222,80 @@ body .star.star8{
     color: rgb(248, 214, 214);
     text-shadow: 0px 0px 15px rgb(30, 31, 31);
 }
+.moon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #292929;
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: rotateLeft 10s infinite linear;
+  overflow: hidden;
+  box-shadow: 0 0 10px 5px rgba(216, 216, 216, 0.7); /* Parlak beyaz shadow */
+}
+
+.moon:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(#f0f0f0, #292929);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.moon:after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 60px;
+  height: 60px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(10px);
+}
+
+.moon .crater {
+  position: absolute;
+  width: 15px;
+  height: 8px;
+  background-color: #adaaaa;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.moon .crater:nth-child(1) {
+  top: 55%;
+  left: 20%;
+}
+
+.moon .crater:nth-child(2) {
+  top: 40%;
+  left: 75%;
+}
+
+.moon .crater:nth-child(3) {
+  top: 30%;
+  left: 40%;
+}
+
+/* Diğer kraterleri buraya ekleyebilirsiniz */
+
+@keyframes rotateLeft {
+  0% {
+      transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+      transform: translateX(-50%) rotate(-360deg);
+  }
+}
 
 /*******NAVBAR_BITIS*************/
 
