@@ -966,14 +966,3 @@ form a span:nth-child(4){
   }
 
 }
-
-h4 {
-  font-size: 50px;
-  color: #ff0000;
-}
-h4:hover {
-  color: #990000;
-}
-p {
-  font-size: 25px;
-}
