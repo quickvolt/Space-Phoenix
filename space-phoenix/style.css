@@ -691,16 +691,17 @@ input[type="number"] {
 /*** anasayfa başlangıç ***/
 .contar {
   width: 60%;
-  margin-top: 100%;
+  margin-top: 8%;
   background-color: transparent;
   margin-left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   opacity: 100%;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color:#333;
+  overflow-y: scroll;
+  height: 82vh;
 }
 
 header {
