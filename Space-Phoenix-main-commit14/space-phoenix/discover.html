@@ -6,8 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space-Phoenix</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .mor-tus {
+            z-index: 3;
+            position: absolute;
+            bottom: 50%;
+            right: 20px;
+            background-color: #8e44ad;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        
+        .mor-tus:hover {
+            background-color: #6c3483;
+        }
+        .sol-tus {
+          z-index: 3;
+          position: absolute;
+          bottom: 50%;
+          left: 20px;
+          background-color: #8e44ad;
+          color: #fff;
+          font-size: 16px;
+          padding: 10px 20px;
+          border-radius: 50px;
+          text-decoration: none;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: background-color 0.3s ease;
+        }
+        
+        .sol-tus:hover {
+          background-color: #6c3483;
+        }
+    </style>
 </head>
 <body translate="no">
+    <a href="discover.html" class="mor-tus">Keşfet</a>
+    <a href="animasyon2.html" class="sol-tus">Animasyon 2</a>
     <!--Navbar-kısmı-başlangıç-->
     <nav>
         <div>
@@ -32,7 +72,7 @@
       </nav>
     <!--Navbar-kısmı-bitiş-->
     <main>
-        <div id="discover-container">
+       
             
         </div>
         <div id="canvas_container"><canvas style="width: 100%; height: 100vh;"></canvas></div>
