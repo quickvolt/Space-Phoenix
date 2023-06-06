@@ -31,47 +31,40 @@
                   user-select: none;
         }
         
+        #ui-button {
+          position: fixed;
+          left: 50px;
+          bottom: 50px;
+          background: transparent;
+          color: rgba(255, 255, 255, 0.6);
+          padding: 5px 10px;
+          border: solid 2px;
+          border-radius: 6px;
+          outline: none;
+          opacity: 1;
+          transition: transform 0.1s cubic-bezier(0.09, 0.95, 0.14, 1.25), opacity 0.1s cubic-bezier(0.09, 0.95, 0.14, 1.25);
+        }
+        #ui-button:before {
+          content: attr(data-on);
+        }
+        #ui-button.off {
+          opacity: 0.3;
+          transform: translate(-2px, 2px);
+        }
+        #ui-button.off:before {
+          content: attr(data-off);
+        }
+        #ui-button:hover {
+          color: rgba(225, 205, 255, 0.6);
+        }
+        
+        button {
+          font-size: 1em;
+        }
         @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
           button {
             font-size: 2em;
           }
-        }
-        
-        .mor-tus {
-            z-index: 3;
-            position: absolute;
-            bottom: 50%;
-            right: 20px;
-            background-color: #8e44ad;
-            color: #fff;
-            font-size: 16px;
-            padding: 10px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
-        
-        .mor-tus:hover {
-            background-color: #6c3483;
-        }
-        .sol-tus {
-          z-index: 3;
-          position: absolute;
-          bottom: 50%;
-          left: 20px;
-          background-color: #8e44ad;
-          color: #fff;
-          font-size: 16px;
-          padding: 10px 20px;
-          border-radius: 50px;
-          text-decoration: none;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          transition: background-color 0.3s ease;
-        }
-        
-        .sol-tus:hover {
-          background-color: #6c3483;
         }
         </style>
         <script>
@@ -82,8 +75,6 @@
     <title>Document</title>
 </head>
 <body translate="no">
-    <a href="discover.html" class="mor-tus">Keşfet</a>
-    <a href="animasyon2.html" class="sol-tus">Animasyon 2</a>
     <canvas id="canvas" width="965" height="506"></canvas>
   <button id="ui-button" data-on="UI: On" data-off="UI: Off"></button>
   <!-- hai thar, I'm emmagamma ^.^ -->
