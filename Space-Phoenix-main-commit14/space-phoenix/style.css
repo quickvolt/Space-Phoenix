@@ -526,6 +526,85 @@ input[type="number"] {
 /* Test.html css_end*/
 
 /*****Contact******/
+
+
+/* margin-bottom rule */
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Murat Kirazkaya'nın flex çalışması alanıdır, Space-Phoenix'e saygılarımla */
+.contact-info-flex-outer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+/* Gri alan */
+.contact-info-flex {
+  width: 80%;
+  display: flex;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #161b28;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* İletişim yazısı alanı */
+.contact-info-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.contact-info-title > * {
+  padding-left: 10px;
+  font-size: 28px;
+  margin-right: 30px;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+}
+
+/* get input from client */
+.contact-info-area {
+  min-width: 50px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact-info-desc {
+  margin-top: 10px;
+}
+
+.contact-info-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.contact-info-center {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1075px) {
+  .contact-info-details {
+    border: solid white 1px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+  }
+}
+
+/* Murat Kirazkaya'nın flex çalışması bitişi */
+
+
 .card{
   position: relative;
   width: 100%;
@@ -653,6 +732,7 @@ input[type="number"] {
 }
 
 /* İletişim Bilgileri Stili */
+
 .contact-info {
   width: 30%;
   margin-right: 5%;
@@ -686,8 +766,8 @@ input[type="number"] {
 
 /*** anasayfa başlangıç ***/
 .contar {
-  width: 60%;
-  margin-top: 8%;
+  width: fit-content; /* for a better ui */
+  margin-top: 10vh; /* vh(view height) make more responsive */
   background-color: transparent;
   margin-left: 50%;
   transform: translate(-50%, 0%);
@@ -698,6 +778,23 @@ input[type="number"] {
   background-color:#333;
   overflow-y: scroll;
   height: 82vh;
+}
+
+@media (max-width: 670px) {
+  .contar {
+    width: 80%;
+    animation: slide-in-contar linear 0.5s 1 alternate;
+
+  }
+
+  @keyframes slide-in-contar {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 80%;
+    }
+  }
 }
 
 header {
@@ -753,7 +850,7 @@ p {
   color: #aaa;
   padding: 20px;
   margin: 200px;
-  height: 1200vh;
+  height: fit-content;
   border-radius: 10px;
 }
 
