@@ -1,6 +1,5 @@
 # Space-Phoenix
 .
-![Space-Phoenix Banner](https://cdn.discordapp.com/attachments/1097848035817562223/1116366164516409425/image.png)
 
 Space-Phoenix, astronomi tutkunları için bir bilgi kaynağıdır. Uzayın derinliklerindeki sırları keşfetmek isteyenler için etkileyici içerikler sunan bir platformdur. Amacımız, insanları astronomi konusunda bilgilendirmek ve herkesin uzaya olan ilgisini artırmaktır.
 
@@ -19,14 +18,14 @@ Space-Phoenix, astronomi hakkında güncel bilgileri ve görselleri sunan bir pl
 ## Ekran Görüntüleri
 
 ![Ekran Görüntüsü 1](https://cdn.discordapp.com/attachments/1097848035817562223/1116376113816535091/ana_sayfa_.png)
- Space-Phoenix sitemizin "Anasayfa" bölümünden bir ekran görüntüsü..
+Space-Phoenix sitemizin "Anasayfa" bölümünden bir ekran görüntüsü.
 
 ![Ekran Görüntüsü 2](https://cdn.discordapp.com/attachments/1097848035817562223/1116367504198082601/image.png)
- Space-Phoenix sitemizin "Hakkımızda" bölümünden bir ekran görüntüsü..
+Space-Phoenix sitemizin "Hakkımızda" bölümünden bir ekran görüntüsü.
 
 ## Nasıl Başlarım?
 
-Proje kodunu yerel ortamınıza klonlayarak veya ZIP dosyası olarak indirerek başlayabilirsiniz. Veya aşağıdaki adımları izleyebilirsiniz;
+Proje kodunu yerel ortamınıza klonlayarak veya ZIP dosyası olarak indirerek başlayabilirsiniz. Veya aşağıdaki adımları izleyebilirsiniz:
 
 1. Proje dizinine gidin:
 cd Space-Phoenix
@@ -37,7 +36,7 @@ npm install
 3. Uygulamayı başlatın:
 npm start
 
-4. Tarayıcınızda `http://localhost:3000` adresine gidin ve Space-Phoenix'i deneyimlemeye başlayın!
+4. Tarayıcınızda http://localhost:3000 adresine gidin ve Space-Phoenix'i deneyimlemeye başlayın!
 
 ## Katkıda Bulunma
 
@@ -63,4 +62,4 @@ Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
 ---
 
 Space-Phoenix hakkında daha fazla bilgi edinmek ve platformu ziyaret etmek için [space-phoenix.com](https://www.space-phoenix.com) adresini ziyaret edebilirsiniz. Uzayın büyüleyici dünyasına hoş geldiniz!
-
+>>>>>>> origin/main

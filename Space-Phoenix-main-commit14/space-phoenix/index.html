@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space-Phoenix</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+	  min-height: 100vh;
+          align-items: center;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          box-sizing: border-box;
+        }
+        .görsel {
+          width: 900px;
+        }
+	    
+	    *** anasayfa başlangıç ***/
+
+.contar {
+  width: 60%;
+  margin-top: 8%;
+  background-color: transparent;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
+  opacity: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color:#333;
+  overflow-y: scroll;
+  height: 82vh;
+  
+
+}
+/* ana sayfa 1. kutu start*/
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card1 {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin-bottom: 35px;
+  width: 100%;
+  
+}
+
+.card1:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card1:hover:before, .card1:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card1::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card1::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+
+/* ana sayfa 1. kutu bitiş*/
+/* ana sayfa 2. kutu start*/
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card2 {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.card2:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card2:hover:before, .card2:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card2::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card2::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+/* ana sayfa 2. kutu bitiş*/
+/* ana sayfa 3. kutu start*/
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card3 {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.card3:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card3:hover:before, .card3:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card3::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card3::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+ /* ana sayfa 3. kutu bitiş*/
+ /* ana sayfa 4. kutu start*/
+
+ @property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card4 {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.card4:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card4:hover:before, .card4:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card4::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card4::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* ana sayfa 4. kutu bitiş*/
+/* ana sayfa 5. kutu start*/
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card5 {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.card5:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card5:hover:before, .card5:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card5::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card5::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* ana sayfa 5. kutu bitiş*/
+/* ana sayfa 6. kutu start*/
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card6 {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.card6:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card6:hover:before, .card6:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card6::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card6::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* ana sayfa 6. kutu bitiş*/
+
+/* ana sayfa 7. kutu start*/
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card7 {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.card7:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card7:hover:before, .card7:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card7::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card7::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* ana sayfa 7. kutu bitişi*/
+/* ana sayfa 8. kutu start*/
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card8 {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.card8:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card8:hover:before, .card8:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card8::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card8::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* ana sayfa 8. kutu bitiş*/
+/* ana sayfa 9. kutu start*/
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card9 {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.card9:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card9:hover:before, .card9:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card9::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card9::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* ana sayfa 9. kutu bitiş*/
+/* ana sayfa 10. kutu başlangıç*/
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card10 {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.card10:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card10:hover:before, .card10:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card10::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card10::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* ana sayfa 10.kutu bitiş*/
+#kara {
+width: 500px;
+height: auto;
+border-radius: 5px;
+}
+
+#ıss{
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#andromeda{
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#Neptün {
+  width: 1000px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#albert {
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
+	    
+h2 {
+  color:coral;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+/* ana sayfa bitiş*/
+    </style>
+</head>
+<body class="my-scrollbar">
+    <!--arkaplan-özelliği-->
+    <div>
+        <div class="star star1"></div>
+        <div class="star star2"></div>
+        <div class="star star3"></div>
+        <div class="star star4"></div>
+        <div class="star star5"></div>
+        <div class="star star6"></div>
+        <div class="star star7"></div>
+        <div class="star star8"></div>
+    </div>
+    <!--Navbar-kısmı-başlangıç-->
+    <nav>
+      <div>
+        <a href="index.html" class="logo">Space-Phoenix</a>
+      </div>
+      <div>
+        <ul id="nav">
+          <li><a href="about-us.html">Hakkımızda</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+          <li><a href="falcon.html">Dragon</a></li>
+          <li><a href="information.html">Bilgi</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="test.html">Test</a></li>
+          <li><a href="discover.html">Keşfet</a></li>
+        </ul>
+      </div>
+      <div class="menu" id="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!--Navbar-kısmı-bitiş-->
+
+    <!-- İçerik -->
+	<div class="contar my-scrollbar">
+    <h1>Son Haberler</h1>
+    <div class="card1">
+	    <h2>Su Ayısını Duymuş muydunuz?</h2>
+      <img src="img/haber/su ayısı.jpg " alt="su ayısı">
+      Fotoğraftaki canlı uzay boşluğunda yaşayabilen tek canlıdır
+      Uzay boşluğuna gönderildi fakat herşey planlandığı gibi gitmedi ve 
+      bu su ayılarının bulunduğu Aya gönderilen araç sert bir şekilde ay yüzeyine çarptı. 
+      Su ayıları şu anda bildiğimiz en dayanıklı canlıdır. Nerdeyse her türlü ortamda hayatta kalabilmektedir.
+
+    </div>
+
+    <div class="card2">
+           <h2>bize ne yakın olan gezegen</h2>        
+	    <img id="andromeda" src="img/haber/andromeda.jpg">
+      - Yaklaşık 200000 ışıkyıllık muazzam çapıyla Andromeda 
+      Galaksisi, Yerel Grup içinde büyüklük açısından ilk galaksi konumunda olup, Samanyolu 
+      ikinci sırada yer almaktadır. Andromeda Galaksisi bizim galaksimize en yakın spiral
+      galaksidir ve Samanyolu'nun yaklaşık iki katı kadar, yaklaşık bin milyar yıldız içerir.
+    </div>
+
+    <div class="card3">
+             <h2>SON DAKİKA Bilim İnsanları Neptün'de Yaşam Buldu!</h2>
+	    <img src="img/haber/neptünkopek.jpg">
+      <h2>SON DAKİKA Bilim İnsanları Neptün'de Yaşam Buldu!</h2>
+      Araştırmalara sonucu neptünün eskiden daha çok olsa da yaşama 
+      elverişli lduğu keşfedildi. Hatta gezegenin içinde donmuş su olduğu ve bu suyun içinde bazı canlıların olduğu 
+      düşünülüyor
+    </div>
+
+    <div class="card4">
+	    <h2>Yoksa Uzaylılar mı Var?</h2>
+      <img src="img/haber/uzaylılar.jpg">
+      Bilim İnsanlarından Açıklama Geldi!
+      "Uzay da tek olmayabiliriz" son yapılan açıklama da en dikkat çeken
+      söz bu oldu ve %60 ihtimalle içinde yaşam olan bir gezegen bulundu!
+    </div>
+
+    <div class="card5">
+	    <h2>İki kare delik çarpıştı</h2>
+      <img id="kara" src="img/haber/maxresdefault-024.jpg">
+      ŞOK ŞOK ŞOK İLK DEFA İKİ KARA DEİĞİN ÇARPIŞTI GÖZLEMLENDİ!
+      Bu hafta iki kara delik çarpıştı ve bu çarpışma çok gelişmiş 
+      cihazlarımız tarafından algılandı. Space-Phoenix olarak bunu ilk 
+      bizim gözlemleyebilmemiz çok gurur verici oldu.
+    </div>
+
+    <div class="card6">
+	     <h2>Gezegenlerin sesleri</h2>
+      Bütün gezegenlerin kendi özel sesleri olduğunu biliyor muydunuz?
+      Bu linkten gezegenlerin seslerine ulaşabilirsiniz:
+      Gezegen sesleri <a href="https://abakcus.com/beautiful-playlist-sounds-of-the-planets-solar-system/" target="_blank">buraya tıklayın</a>
+    </div>
+
+    <div class="card7">
+	    <h2>Uluslararası Uzay İstasyonu Nasıl Havada Duruyor? </h2>
+      <img id="ıss" src="img/haber/ıss.jpg" alt="ıss">
+      <h2>Uluslararası Uzay İstasyonu Nasıl Havada Duruyor? </h2>
+      Uzay istasyonu, Dünya'nın etrafında dönerken bir düşüş halindedir. Bu düşüş bir süreliğine değil, hiç durmadan devam etmektedir. Yani Dünya 
+      etrafında dönerken aynı zamanda sürekli olarak düşüyor. Bu duruma freefall yani serbest düşüş deniyor.
+    </div>
+
+    <div class="card8">
+	    <h2>Zaman Diye Bir Şey Yok!</h2>
+      <img src="img/haber/zaman.jpg" alt="">
+      Zaman Diye Bir Şey Yok!
+      Uzayda zaman kavramı diye birşey yok bir şey olduğunda
+      uzaya dalgalar gönderir ve bir alıcıya deyinceye kadar gitmeye devam eder.
+    </div>
+
+    <div class="card9">
+	    <h2>Albert Einstein ve Kuantum Fiziği</h2>
+      <img id="albert"src="img/haber/albert esinten.jpg" alt="">
+      905: Albert Einstein dalga özellikleri olan ışığın aynı zamanda, 
+      daha sonra foton diye adlandırılacak olan, belirli büyüklükte enerji 
+      paketlerinden oluştuğu düşüncesini ortaya attı.
+    </div>
+
+    <div class="card10">
+	    <h2>Albert Einstein ve Kuantum Fiziği</h2>
+      <img src="img/haber/çay kaşığı.jpg" alt="">
+     Bunu Biliyor muydunuz?
+     Uzay bir çay kaşığı toplamda 1 milyar ton ağırlığı denk gelmektedir.
+     Bu da gerçekten baya ağır bişey demek oluyor.
+    </div>
+            </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="hamburger.js"></script>
+</body>
+</html>
